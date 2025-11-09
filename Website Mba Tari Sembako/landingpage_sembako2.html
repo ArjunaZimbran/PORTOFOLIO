@@ -6,6 +6,7 @@
     <title>Mba Tari 2</title>
     <link rel="stylesheet" href="style_1a.css">
     <link rel="stylesheet" href="../PROJECT/fontawesome/css/all.css">
+    <link rel="stylesheet" href="script.js">
 </head>
 <body>
     <!-- hero Image -->
@@ -13,15 +14,14 @@
   <img src="../Website Mba Tari Sembako/gambar2.png" alt="Logo Warung Sembako">
   <h1>WARUNG SEMBAKO MBA TARI</h1>
   <p>Belanja kebutuhan rumah lebih mudah dan hemat</p>
-  <!-- <button>Belanja Sekarang</button> -->
-  <a href="#" class="button">Belanja Sekarang</a>
+  <a href="#" id="hubungiKami" class="button">Hubungi Kami</a>
 </section>
 
 <!-- Kategori -->
  <section class="kategori-produk">
         <h2>KATEGORI PRODUK</h2>
         <div class="kategori-grid">
-        <div class="kategori-item">Beras</div>
+        <div class="kategori-item" data-link="beras.html">Beras</div>
         <div class="kategori-item">Minyak</div>
         <div class="kategori-item">Gula</div>
         <div class="kategori-item">Telur</div>
@@ -36,25 +36,25 @@
                 <img src="../Website Mba Tari Sembako/gambar beras.jpeg" alt="gambar">
                 <h3>Beras Anak Lanang</h3>
                 <p>Rp. 77.500/kg</p>
-                <button>Beli Sekarang</button>
+                <button class="btn-beli" data-produk="Beras Anak Lanang">Beli Sekarang</button>
             </div>
             <div class="card-items">
                 <img src="../Website Mba Tari Sembako/gambar minyak.jpeg" alt="gambar">
                 <h3>Minyak Goreng </h3>
                 <p>Rp. 23.000 (2 Liter) </p>
-                <button>Beli Sekarang</button>
+                <button class="btn-beli" data-produk="Minyak Goreng">Beli Sekarang</button>
             </div>
             <div class="card-items">
                 <img src="../Website Mba Tari Sembako/gambar gulaku.jpeg" alt="gambar">
                 <h3>Gulaku</h3>
                 <p>Rp. 17.000/kg</p>
-                <button>Beli Sekarang</button>
+                <button class="btn-beli" data-produk="Gulaku">Beli Sekarang</button>
             </div>
             <div class="card-items">
                 <img src="../Website Mba Tari Sembako/gambar telur.jpeg" alt="gambar">
                 <h3>Telur Omega</h3>
                 <p>Rp. 29.000/kg</p>
-                <button>Beli Sekarang</button>
+                <button class="btn-beli" data-produk="Telur Omega">Beli Sekarang</button>
             </div>
  </section>
 
@@ -86,5 +86,7 @@
  </div>
  <small>&copy; 2025 Warung Sembako Mba Tari. Semua hak cipta dilindungi </small>
  </footer>
+
+ <script src="script.js"></script>
 </body>
 </html>
