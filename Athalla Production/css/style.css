@@ -20,9 +20,12 @@ header {
   z-index: 100;
 }
 .logo img {
-  height: 55px;
+  width: 130px;  /* bisa kamu ubah 100–150px sesuai proporsi logo */
+  height: auto;
+  object-fit: contain;
+  /* height: 55px;
   width: auto;
-  display: block;
+  display: block; */
 }
 nav a {
   margin-left: 20px;
@@ -31,6 +34,7 @@ nav a {
   transition: 0.3s;
 }
 nav a:hover { color: #fff; }
+
 /* Hero */
 hero {
   display: flex;
