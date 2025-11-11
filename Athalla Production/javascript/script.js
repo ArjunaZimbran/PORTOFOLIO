@@ -18,11 +18,18 @@ layananCards.forEach(card => {
     }
   });
 });
-// // Tombol layanan (contoh: mitoni, siraman, midodareni, dst)
-// const layananButtons = document.querySelectorAll('.layanan-btn');
-// layananButtons.forEach(btn => {
-//   btn.addEventListener('click', () => {
-//     const targetPage = btn.dataset.page; // ambil nama halaman dari atribut data-page
-//     window.location.href = `../html/${targetPage}.html`;
-//   });
-// });
+
+// Script global WhatsApp button
+const waButtons = document.querySelectorAll(".wa-btn");
+
+waButtons.forEach(btn => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const nomor = "6285875597282"; // nomor admin kamu
+    const layanan = btn.getAttribute("data-layanan") || "layanan Anda"; 
+    const pesan = encodeURIComponent(`Halo Athalla Production, saya ingin memesan dokumentasi ${layanan}.`);
+
+    window.open(`https://wa.me/${nomor}?text=${pesan}`, "_blank");
+  });
+});
