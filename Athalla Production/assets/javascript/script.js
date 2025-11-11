@@ -2,7 +2,7 @@
 const btnPorto = document.querySelector('.btn-porto');
 if (btnPorto) {
   btnPorto.addEventListener('click', () => {
-    window.location.href = '../html/portofolio.html';
+    window.location.href = 'portofolio.html';
   });
 }
 
@@ -18,6 +18,9 @@ layananCards.forEach(card => {
     }
   });
 });
+
+// Tombol Porto
+
 
 // Script global WhatsApp button
 const waButtons = document.querySelectorAll(".wa-btn");
