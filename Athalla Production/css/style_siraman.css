@@ -32,27 +32,26 @@ header .logo {
   height: auto;
   object-fit: contain;
 }
-
-/* Mitoni Intro */
-.mitoni-intro {
+/* Siraman Introi */
+.siraman-intro {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   padding: 60px 10%;
   gap: 40px;
 }
-.mitoni-intro .text {
+.siraman-intro .text {
   flex: 1 1 400px;
 }
-.mitoni-intro .text h1 {
+.siraman-intro .text h1 {
   color: #f9d977;
   margin-bottom: 15px;
   font-size: 2rem;
 }
-.mitoni-intro .img {
+.siraman-intro .img {
   flex: 1 1 350px;
 }
-.mitoni-intro img {
+.siraman-intro img {
   width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
@@ -60,39 +59,42 @@ header .logo {
 
 /* Dokumentasi */
 .layanan-gallery {
-  margin: 60px auto;
-  text-align: center;
+    margin: 60px auto;
+    text-align: center;
 }
-.layanan-gallery h2 {
-  color: #f9d977;
-  margin-bottom: 20px;
-}
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  padding: 0 20px;
-}
-
+ .layanan-gallery h2 {
+    color: #f9d977;
+    margin-bottom: 20px;
+ }
+ .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 20px;
+ }
 .gallery-item {
-  overflow: hidden;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
+  /* position: relative; */
+  /* overflow: hidden;
+  border-radius: 12px; */
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+.gallery-item img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-.gallery-item img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px;
-  transition: transform 0.4s ease, opacity 0.4s ease;
-}
 
 .gallery-item:hover img {
-  transform: scale(1.05);
-  opacity: 0.85;
+    transform: scale(1.05);
+    opacity: 0.85;
 }
 
+/* pakeet */
 /* Detail Lengkap */
 /* Paket */
 .paket {
@@ -128,7 +130,6 @@ header .logo {
   line-height: 1.8;
 }
 
-/* Hubungi Kami */
 /* Hubungi Kami */
 .contact {
   text-align: center;
